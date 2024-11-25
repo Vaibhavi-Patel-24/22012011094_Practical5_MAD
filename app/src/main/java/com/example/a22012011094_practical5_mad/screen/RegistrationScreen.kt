@@ -3,6 +3,7 @@ package com.example.a22012011094_practical5_mad.screen
 import com.example.a22012011094_practical5_mad.ui.theme._22012011094_Practical5_MADTheme
 import android.content.Context
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -105,6 +106,9 @@ fun RegistrationScreen(
                 fontWeight = FontWeight.Bold,
                 modifier = Modifier
                     .padding(bottom = 50.dp)
+                    .clickable {
+                        navController.navigate("login") // Navigate to login
+                    }
             )
         }
     }
